@@ -1,0 +1,32 @@
+body {
+ background-color: #efd5b5;
+ font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1{
+    ;
+    color: #4d4d4d;
+}
+h2{
+    color: #4d4d4d;
+} 
+p1{
+    color: #F6F6F6;
+}
+.flex-container-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(170, 123, 61)
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#homepageleftside{
+    width: 49%;
+}
+#homepagerightside{
+    width: 49%;
+}
