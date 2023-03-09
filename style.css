@@ -17,7 +17,7 @@ h1 {
 }
 
 #banner-image{
-    align-self: end;
+    justify-content: end;
 }
 .flex-container {
     display: flex;
