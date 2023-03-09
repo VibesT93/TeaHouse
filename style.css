@@ -1,14 +1,10 @@
 
-body {
-    color: black;
-}
 
 nav {
     background-color: #88966a;
 }
 
 h1 {
-    color: floralwhite;
     align-content: center;
 }
 #banner {
@@ -29,10 +25,10 @@ h1 {
 }
 #homepageleftside{
     margin: 2rem;
-    width: 49%;
+   
 }
 #homepagerightside{
-    width: 49%;
+
     margin: 2rem;
 }
 #hero-page{
