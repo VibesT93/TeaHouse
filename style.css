@@ -16,7 +16,7 @@ h1 {
 }
 
 #banner-image{
-    align-items: right;
+    text-align: right;
 }
 .flex-container {
     display: flex;
