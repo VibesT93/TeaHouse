@@ -9,6 +9,7 @@ nav {
 
 h1 {
     color: floralwhite;
+    align-content: center;
 }
 #banner {
     background-color: #8fa385;
@@ -38,6 +39,7 @@ h1 {
     background-image: url("https://www.news-medical.net/images/news/ImageForNews_735966_16739612170418135.jpg");
     align-self: center;
     width: 100%;
+    height: fit-content;
 }
 #footer {
     background-color: #828858;
