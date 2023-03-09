@@ -18,9 +18,12 @@ nav {
     background-color: #8fa385;
 
 }
+#homepage-body-1{
+    background-color: #B3D177;
+}
 
 #banner-image{
-    align-items: flex-end;
+    align-items: end;
 }
 .flex-container {
     display: flex;
