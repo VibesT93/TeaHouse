@@ -1,32 +1,26 @@
 
-
-html {
-    font-family: Glook;
-}
-
 h1 {
-    color: #4d4d4d;
+    color: #000000;
 }
 h2{
-    color: #4d4d4d;
+    color: #000000;
 } 
 p1{
-    color: #F6F6F6;
+    color: #000000;
 }
 
 nav {
     background-color: #88966a;
 }
 
-.flex-container-header {
-    display: flex;
-    justify-content: space-around;
-    background-color: #b3d177;
-}
 
 #banner {
-    background-color: #DDE5D9;
+    background-color: #8fa385;
 
+}
+
+#banner-image{
+    align-items: flex-end;
 }
 .flex-container {
     display: flex;
