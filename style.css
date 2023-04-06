@@ -8,10 +8,12 @@ h1 {
     font-family: "Glook";
     align-content: center;
 }
+
 #banner {
     background-color: #8fa385;
 
 }
+
 #homepage-body-1{
     background-color: #B3D177;
 }
@@ -21,26 +23,31 @@ h1 {
      justify-content: flex-end;
      background-color: #828858;
     }
+
 .flex-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
+
 #homepageleftside{
     margin: 2rem;
     font-family: "Roboto";
    
 }
+
 #homepagerightside{
 
     margin: 2rem;
 }
+
 #hero-page{
     background-image: url("https://www.news-medical.net/images/news/ImageForNews_735966_16739612170418135.jpg");
     align-self: center;
     width: 100%;
     height: 900px;
 }
+
 #footer {
     background-color: #828858;
 }
