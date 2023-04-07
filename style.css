@@ -22,6 +22,7 @@ h1 {
      display: flex;
      justify-content: flex-end;
      background-color: #828858;
+     max-height: 5em;
     }
 
 .flex-container {
