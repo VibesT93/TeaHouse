@@ -13,9 +13,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Gloock&family=Roboto:wght@300&display=swap" rel="stylesheet">
-
-
     <title>Shop</title>
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -32,15 +31,15 @@
     <div class="shopHeader">
         <h1>Shop</h1>
         <div class="shopLinks">
-            <a href="www.google.ie">Tea</a>
-            <a href="www.google.ie">Coffee</a>
-            <a href="www.google.ie">Accessories</a>
+            <a href="#" onclick="hideNone()">All</a>
+            <a href="#" onclick="hideAccessories()">Tea</a>
+            <a href="#" onclick="hideTea()">Accessories</a>
         </div>
     </div>
     <!--Webstore section-->
     <div class="storeContainer">
         <!--A grid layout using flex which will display our products-->
-        <div class="productGrid">
+        <div id="teaGrid" class="productGrid">
             <!--Every product on the store will use this card to be displayed-->
             <!--Lemongrass Tea-->
             <div class="productCard">
@@ -175,7 +174,7 @@
                 </div>
             </div>
             <!--Wellness Tea-->
-           <div class="productCard">
+            <div class="productCard">
                 <img class="productImg" src="./images/wellnestea.jpg" alt="Dried herbal tea leaves">
                 <p>Tea</p>
                 <div class="productInfo">
@@ -186,7 +185,108 @@
                     <a href="">Add to Cart</a>
                 </div>
             </div>
-        
+        </div>
+
+        <!--Begining of accessories section-->
+        <div id= "accessoriesGrid" class="productGrid">
+            <!--Ball Teal Strainer-->
+            <div class="productCard">
+                <img class="productImg" src="./images/ballstrainer.jpg"
+                    alt="Stainless steel ball used for straining tea">
+                <p>Accessories</p>
+                <div class="productInfo">
+                    <p class="productName">Steel Ball Strainer
+                    <p class="productPrice">€6.29</p>
+                </div>
+                <div class="purchaseDiv">
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+            <!--Induction Adapter-->
+            <div class="productCard">
+                <img class="productImg" src="./images/inductionadapter.jpg"
+                    alt="Adapter for using coffee perculator on indiction hob">
+                <p>Accessories</p>
+                <div class="productInfo">
+                    <p class="productName">Induction Adapter</p>
+                    <p class="productPrice">€21.99</p>
+                </div>
+                <div class="purchaseDiv">
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+            <!--Espresso Maker-->
+            <div class="productCard">
+                <img class="productImg" src="./images/coffeemaker.jpg" alt="Stovetop espresso maker">
+                <p>Accessories</p>
+                <div class="productInfo">
+                    <p class="productName">Espresso Maker</p>
+                    <p class="productPrice">€24.99</p>
+                </div>
+                <div class="purchaseDiv">
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+            <!--Basket Strainer-->
+            <div class="productCard">
+                <img class="productImg" src="./images/basketstrainer.jpg" alt="Strainer in the shape of a basket">
+                <p>Accessories</p>
+                <div class="productInfo">
+                    <p class="productName">Basket Strainer</p>
+                    <p class="productPrice">€8.79</p>
+                </div>
+                <div class="purchaseDiv">
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+            <!--Red Espresso Maker-->
+            <div class="productCard">
+                <img class="productImg" src="./images/redcoffeemaker.jpg" alt="Red espresso maker">
+                <p>Accessories</p>
+                <div class="productInfo">
+                    <p class="productName">Red Espresso Maker</p>
+                    <p class="productPrice">€44.79</p>
+                </div>
+                <div class="purchaseDiv">
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+            <!--Tea Jars-->
+            <div class="productCard">
+                <img class="productImg" src="./images/teajars.jpg" alt="Bamboo and glass tea Jars">
+                <p>Accessories</p>
+                <div class="productInfo">
+                    <p class="productName">Glass Tea Jars</p>
+                    <p class="productPrice">€24.99</p>
+                </div>
+                <div class="purchaseDiv">
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+            <!--MIlk Frother-->
+            <div class="productCard">
+                <img class="productImg" src="./images/milkfrother.jpg" alt="Milk frother">
+                <p>Accessories</p>
+                <div class="productInfo">
+                    <p class="productName">Milk Frother</p>
+                    <p class="productPrice">€34.99</p>
+                </div>
+                <div class="purchaseDiv">
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
+            <!--Tea Infuser-->
+            <div class="productCard">
+                <img class="productImg" src="./images/infuser.jpg" alt="Tea infuser">
+                <p>Accessories</p>
+                <div class="productInfo">
+                    <p class="productName">Tea Infuser</p>
+                    <p class="productPrice">€19.49</p>
+                </div>
+                <div class="purchaseDiv">
+                    <a href="">Add to Cart</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>
