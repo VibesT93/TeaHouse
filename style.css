@@ -1,5 +1,4 @@
 
-
 nav {
     background-color: #88966a;
 }
@@ -32,26 +31,36 @@ h1 {
 }
 
 #homepageleftside{
+    
     margin: 2rem;
     font-family: "Roboto";
-   
+    color: #F8FFF8;
+    
 }
 
 #homepagerightside{
-
     margin: 2rem;
+    justify-content: center;
+    text-align: center;
 }
 
-#hero-page{
-    background-image: url("https://www.news-medical.net/images/news/ImageForNews_735966_16739612170418135.jpg");
-    align-self: center;
-    width: 100%;
-    height: 900px;
-    color: white;
+#homepare-image{
+    justify-content: center;
 }
+
+
 
 #footer {
     background-color: #828858;
+    color: #F8FFF8;
+}
+
+#authors{
+    align-items: center;
+}
+
+#location-footer{
+    text-align: start;
 }
 
 #banner-img {
@@ -67,6 +76,21 @@ h1 {
     padding-top: 1.5%;   
 }
 
+#hero-background{
+    background-image: url("images/hero-image.png");
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40rem;
+}
+
 #hero-text{
-    text-align: center;
+    font-family: "Roboto";
+    color: #F8FFF8;
+    font-size: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
