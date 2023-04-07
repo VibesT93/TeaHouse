@@ -21,7 +21,7 @@ h1 {
      display: flex;
      justify-content: flex-end;
      background-color: #828858;
-     max-height: 13rem;
+     max-height: 10rem;
     }
 
 .flex-container {
@@ -41,7 +41,7 @@ h1 {
 #homepagerightside{
     margin: 2rem;
     justify-content: center;
-    text-align: center;
+    
 }
 
 
@@ -61,7 +61,10 @@ h1 {
 }
 
 #banner-img {
+    text-align: end;
+    height: 8rem;
     width: 8rem;
+    margin: 5%;
 }
 
 #banner-title{
@@ -69,8 +72,7 @@ h1 {
     font-family: "Glook";
     font-size: 4rem;
     align-items: start;
-    padding-left: 5%;
-    padding-top: 1.5%;   
+    margin: 5%; 
 }
 
 #hero-background{
