@@ -16,3 +16,4 @@ function hideNone(){
     document.getElementById("accessoriesGrid").style.display = "flex";
     document.getElementById("teaGrid").style.display="flex";
 }
+
