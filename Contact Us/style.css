@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+body {
+    margin: 0;
+    background-color: rgb(250, 245, 245);
+    font-family: 'Roboto', sans-serif;
+	font-size:14px;
+}
+.contactUsContainer{
+	display:flex;
+	flex-direction:Column;
+	justify-content:center;
+}
+.contactUsHeader{
+	flex: 1;
+	margin:10px;
+	padding:10px;
+	font-family: 'Gloock', serif;
+    font-size: 40px;
+}
+.contactUsContentContainer{
+	display:flex;
+	
+}
+.contactUsMessageContainer{
+	flex:2;
+	border:1px solid;
+	margin:25px;
+	padding:10px;
+	background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.contactUsFormContainer, .contactUsDetailsSubContainer{
+	display:flex;
+	flex-direction:Column;
+}
+.contactUsFormRow{
+	display:flex;
+	flex-direction:row;
+}
+.contactUsFormBox{
+	flex:1;
+	margin:10px;
+	padding:10px;
+}
+.contactUsDetailsContainer{
+	flex:1;
+	border:1px solid;
+	margin:25px;
+	padding:10px;
+	display:flex;
+	flex-direction:Column;
+	background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+	
+}
+.contactUsReachContainer{
+	flex:1;
+
+	margin:10px;
+	padding:10px;
+	flex-direction:Column;
+}
+.contactUsDetailsRow{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+.contactUsDetailsText{
+	padding-left:10px
+}
+
+#map{
+	flex:1;
+
+	margin:10px;
+	padding:10px;
+
+}
+.contactUsDetailsSocials{
+	display:flex;
+	flex-direction:row;
+}
+.contactUsDetailsSocialsImage{
+	padding-right:20px;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#imageReplace{
+	text-align:center;
+}
+	
+#message, #subject, #email, #phone, #firstName, #secondName{
+	width:99%;
+}
+#message{
+	resize:vertical;
+}
+input[type="text"], [type="email"], [type="submit"]{
+    font-size:24px;
+}
+textarea[type="text"]{
+	font-size:24px;
+}
+.contactList{
+	
+}
+@media(max-width:1000px){
+	.contactUsContentContainer{
+	flex-direction:Column;
+	}
+}

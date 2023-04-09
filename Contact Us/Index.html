@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Contact Us</title>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="script.js"></script>
+	</head>		
+	<body>
+	<div class="contactUsContainer">
+		<div class="contactUsHeader">
+				<h1>Contact us</h1>
+				<p>We would love to hear from you!</p>
+		</div>
+		<div class="contactUsContentContainer">
+			<div class="contactUsMessageContainer">
+			<h1 id="messageReplace"></h1>
+			<h1 id="imageReplace"></h1>
+			<form id="contactUsFormContainer" onsubmit="return messageFunction()">
+				<h1>Message us!<h1>
+				<div class="contactUsFormRow">
+					<div class="contactUsFormBox">
+							<label for="firstName">First name</label><br>
+							<input type="text" id="firstName" placeholder="John"><br>						
+						</div>
+						<div class="contactUsFormBox">
+							<label for="secondName">Second name</label><br>
+							<input type="text" id="secondName" placeholder="Murphy"><br>	
+						</div>						
+					</div>
+					<div class="contactUsFormRow">
+						<div class="contactUsFormBox">
+							<label for="email">Email</label><br>
+							<input type="email" id="email" placeholder="johnmurphy1916@gmail.com"><br>								
+						</div>
+						<div class="contactUsFormBox">
+							<label for="phone">Phone</label><br>
+							<input type="text" id="phone" placeholder="+353 87 854 5746"><br>								
+						</div>					
+					</div>
+					<div class="contactUsFormRow">
+						<div class="contactUsFormBox">
+							<label for="subject">Subject</label><br>
+							<input type="text" id="subject" placeholder="Tea"><br>
+						</div>					
+					</div>
+					<div class="contactUsFormRow">
+						<div class="contactUsFormBox">
+							<label for="message">Message</label><br>
+							<textarea type="text" id="message" placeholder="Your Message" rows="10"></textarea>
+						</div>
+					</div>
+					<div class="contactUsFormRow">
+						<div class="contactUsFormBox">
+							<input type="submit" />
+						</div>
+					</div>
+				</form>
+			</div>
+			<div class="contactUsDetailsContainer">
+				<h1>Reach us!</h1>
+					<div class="contactUsReachContainer">
+						<div class="contactUsDetailsRow">
+							<div class="contactUsDetailsImage">
+								<img src="Images/envelope.png" width="50" height="50" />
+							</div>
+							<div class="contactUsDetailsText">
+								<h1>teahouse@gmail.com</h1>
+							</div>							
+						</div>
+						<div class="contactUsDetailsRow">
+							<div class="contactUsDetailsImage">
+								<img src="Images/phone-call.png" width="50" height="50" />
+							</div>
+							<div class="contactUsDetailsText">
+								<h1>+353 49 8545746</h1>
+							</div>							
+						</div>
+						<div class="contactUsDetailsRow">
+							<div class="contactUsDetailsImage">
+								<img src="Images/home.png" width="50" height="50" />
+							</div>
+							<div class="contactUsDetailsText">
+								<h1>National College of Ireland, Mayor Street, IFSC, Dublin 1</h1>
+							</div>							
+						</div>
+						<div class="contactUsDetailsSocials">
+							<div class="contactUsDetailsSocialsImage">
+								<a target="_blank" href="https://en-gb.facebook.com/"><img src="Images/facebook.png" width="50" height="50" /></a>
+							</div>
+							<div class="contactUsDetailsSocialsImage">
+								<a target="_blank" href="https://www.instagram.com/"><img src="Images/instagram.png" width="50" height="50" /></a>
+							</div>
+							<div class="contactUsDetailsSocialsImage">
+								<a target="_blank" href="https://twitter.com/"><img src="Images/twitter.png" width="50" height="50" /></a>
+							</div>
+							<div class="contactUsDetailsSocialsImage">
+								<a target="_blank" href="https://www.linkedin.com/home"><img src="Images/linkdin.png" width="50" height="50" /></a>
+							</div>							
+						</div>						
+					</div>
+					<div id="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d612.8682853464154!2d-6.243148866342097!3d53.34890411811922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e8cd86e97e7%3A0x6d51b774ee7fa935!2sNational%20College%20of%20Ireland!5e0!3m2!1sen!2sie!4v1680746452213!5m2!1sen!2sie" width="400" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+
+			</div>		
+		</div>
+	</div>
+	<script src="script.js"></script>
+	</body>
+</html>
