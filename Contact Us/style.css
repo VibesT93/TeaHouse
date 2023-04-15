@@ -1,4 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+*{
+     margin: 0%;
+}
+
 body {
     margin: 0;
     background-color: rgb(250, 245, 245);
@@ -91,9 +95,29 @@ body {
     top: 0;
     position: absolute;
 }
+#meetTeam{
+	display:flex;
+	justify-content: center; 
+	
+}
+.teamMemeber{
+	border:1px solid;
+	width: 450px;
+	text-align:center;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	
+}
+.headshot{
+	border-radius: 10px;
+}
 #imageReplace{
 	text-align:center;
 }
+#messageReplace{
+	text-align:center;
+}
+
 	
 #message, #subject, #email, #phone, #firstName, #secondName{
 	width:99%;
@@ -110,8 +134,57 @@ textarea[type="text"]{
 .contactList{
 	
 }
-@media(max-width:1000px){
+@media(max-width:1400px){
 	.contactUsContentContainer{
+	flex-direction:Column;
+	}
+}
+.footerBox{
+	flex:1;
+	margin:10px;
+	padding:10px;
+	flex-direction:Column;
+	padding: 5px
+}
+.footerContactUsDetailsRow{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	padding: 5px;
+}
+.footerContactUsDetailsText{
+	padding: 5px;
+}
+
+.footerContactUsDetailsSocials{
+	display:flex;
+	flex-direction:row;
+	padding: 5px;
+}
+.footerContactUsDetailsSocialsImage{
+	padding-right:20px;
+}
+.footerContainer{
+	color: white;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	background-color: #B3D177;
+	width: 100%;
+}
+.footerOpeningHoursRow{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+.footerEnd{
+	border-top: 1px solid white;
+	background-color: #B3D177;
+	width: 100%;
+	color: white;
+}
+@media(max-width:1200px){
+	.footerContainer{
 	flex-direction:Column;
 	}
 }

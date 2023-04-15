@@ -38,6 +38,6 @@ function messageFunction(){
 	document.getElementById("contactUsFormContainer").style.display="none";
 	document.getElementById("messageReplace").innerHTML=("Hi "+userFirstName+","+"<br/>"+"<br/>"+"thank you for your message regarding "+userSubject+"."+"<br/>"+"<br/>"+"You will be contacted via "
 	+userEmail+" and "+userPhone+" by a member of our team."+"<br/>"+"<br/>"+"We'll get back to you as quick as a kettle takes to boil!"+"<br/>"+"<br/>");
-	document.getElementById("imageReplace").innerHTML=("<img src=Images/Kettle2.PNG>");
+	document.getElementById("imageReplace").innerHTML=("<img src=Images/kettleboiling.gif>");
 	
 }
