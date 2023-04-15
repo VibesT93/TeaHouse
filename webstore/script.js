@@ -24,7 +24,9 @@ function teaQuiz(){
     var y = document.getElementById("floral").value;
     var z = document.getElementById("milk").value;
 
-    if (z == "Yes" && )
+    if (z == "Yes"){
+
+    }
     
 
 
