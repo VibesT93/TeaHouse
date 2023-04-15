@@ -70,6 +70,34 @@
     </div>
   </div>
 </nav>
+<div class="flex-container">
+  <div class="col col-sm-8">
+    <h2>Tea Selector</h2>
+    <p1>Use our scales to help us select the perfect tea for you!!</p1>
+  </div>
+</div>
+<div class="flex-container" id="quiz-form">
+  <div class="row" id="questions">
+    <form>
+      <label>Do you want your tea to be sweet?</label>
+        <input type="radio" id="sweetness" value="Yes" name="sweetness">
+        <input type="radio" id="sweetness" value="No" name="sweetness">
+        
+      
+      <label>Do you want you tea to be floral</label>
+        <input type="radio" id="floral" value="Yes" name="floral">
+        <input type="radio" id="floral" value="No" name="floral">
+
+      <label>Do you want to drink your tea with milk?</label>
+        <input type="radio" id="milk" value="Yes" name="milk">
+        <input type="radio" id="milk" value="No" name="milk">
+
+      <input type="submit" onclick="teaQuiz();return false"><br/>  
+
+       
+    </form>
+  </div>
+</div>
 
 <div id="carousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
@@ -110,6 +138,6 @@
       </div>
     </div>
   </div>
-	<script src="index.js"></script>
+	<script src="../webstore/script.js"></script>
   </body>
 </html>

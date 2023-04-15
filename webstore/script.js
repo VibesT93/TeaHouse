@@ -17,3 +17,15 @@ function hideNone(){
     document.getElementById("teaGrid").style.display="flex";
 }
 
+//tea Quiz
+
+function teaQuiz(){
+    var x = document.getElementById("sweetness").value;
+    var y = document.getElementById("floral").value;
+    var z = document.getElementById("milk").value;
+
+    if
+    
+
+
+}
