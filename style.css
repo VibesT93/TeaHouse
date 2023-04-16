@@ -21,6 +21,8 @@ h5 {
 }
 
 #homepage-body-1{
+    max-width: 1320px;
+    margin: auto;
     background-color: #B3D177;
 }
 
@@ -218,7 +220,7 @@ h5 {
     max-height: 10rem;
 }
 
-#carouselTitle{
+.carouselTitle{
     max-width: 1320px;
     margin: auto;
 }
