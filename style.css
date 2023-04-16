@@ -19,21 +19,11 @@ h5 {
     color: black;
     font-family: "Glook";
 }
-#banner {
-    background-color: #8fa385;
-
-}
 
 #homepage-body-1{
     background-color: #B3D177;
 }
 
-.bannerContainer{
-     display: flex;
-     justify-content: flex-end;
-     background-color: #828858;
-     max-height: 10rem;
-    }
 
 .flex-container {
     display: flex;
@@ -109,32 +99,12 @@ h5 {
 	}
 }
 
-#authors{
-    align-items: center;
-}
 
 #location-footer{
     text-align: start;
 }
 
-#banner-img {
-    align-self: end;
-    display: inline;
-    height: 8rem;
-    width: 8rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
-}
 
-#banner-title{
-    color: #F8FFF8;
-    font-family: "Glook";
-    font-size: 4rem;
-    align-items: start;
-    margin: 1.5%;
-    max-height: 10rem;
-}
 
 #hero-background{
     background-image: url("images/hero-image.png");
@@ -200,4 +170,38 @@ h5 {
     justify-content: center;
     flex-flow:row wrap;
    
+}
+
+/* Banner */
+
+.bannerContainer {
+        
+    background-color: #828858;
+    max-height: 10rem;
+}
+
+.bannerContent{
+    max-width: 1320px;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#banner-img {
+    align-self: end;
+    display: inline;
+    height: 8rem;
+    width: 8rem;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+#banner-title {
+    color: #F8FFF8;
+    font-family: "Glook";
+    font-size: 4rem;
+    align-items: start;
+    margin: 1.5%;
+    max-height: 10rem;
 }
