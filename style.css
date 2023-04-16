@@ -58,9 +58,55 @@ h5 {
 
 
 
-#footer {
-    background-color: #828858;
-    color: #F8FFF8;
+
+.footerBox{
+	flex:1;
+	margin:10px;
+	padding:10px;
+	flex-direction:Column;
+	padding: 5px
+}
+.footerContactUsDetailsRow{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	padding: 5px;
+}
+.footerContactUsDetailsText{
+	padding: 5px;
+}
+
+.footerContactUsDetailsSocials{
+	display:flex;
+	flex-direction:row;
+	padding: 5px;
+}
+.footerContactUsDetailsSocialsImage{
+	padding-right:20px;
+}
+.footerContainer{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	background-color: #B3D177;
+	width: 100%;
+	color: white; 
+}
+.footerOpeningHoursRow{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+.footerEnd{
+	border-top: 1px solid white;
+	background-color: #B3D177;
+	width: 100%;
+	color: white; 
+}
+@media(max-width:1100px){
+	.footerContainer{
+	flex-direction:Column;
+	}
 }
 
 #authors{
@@ -97,6 +143,7 @@ h5 {
     background-repeat: no-repeat;
     width: 100%;
     height: 70rem;
+    
 }
 
 #hero-text{
@@ -130,3 +177,27 @@ h5 {
     margin-left: auto;
     margin-right: auto;
  }
+
+#quiz-title {
+    text-align: center;
+    width: 100%;
+    background-color: #B3D177;
+    color: white;
+    padding: 3rem;
+}
+
+#quiz-form {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    background-color:#828858;
+    color: #F8FFF8;
+    padding: 3rem;
+}
+
+#questions {
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap;
+   
+}

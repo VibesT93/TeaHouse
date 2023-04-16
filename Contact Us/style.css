@@ -1,0 +1,348 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i');
+*{
+     margin: 0%;
+}
+body{
+    margin: 0;
+    background-color: rgb(250, 245, 245);
+    font-family: 'Roboto', sans-serif;
+	font-size:14px;
+}
+.maxWidth{
+	max-width: 1320px;
+	margin: auto;
+}
+.contactUsContainer{
+	display:flex;
+	flex-direction:Column;
+	justify-content:center;
+}
+.contactUsHeader{
+	flex: 1;
+	margin:10px;
+	padding:10px;
+	font-family: 'Gloock', serif;
+    font-size: 40px;
+}
+.meetTeamHeader{
+	flex: 1;
+	margin:10px;
+	padding:10px;
+	font-family: 'Gloock', serif;
+    font-size: 40px;
+	text-align:center;
+}
+.contactUsContentContainer{
+	display:flex;
+	
+}
+.contactUsMessageContainer{
+	flex:2;
+	border:1px solid;
+	margin:25px;
+	padding:10px;
+	background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+.contactUsFormContainer, .contactUsDetailsSubContainer{
+	display:flex;
+	flex-direction:Column;
+}
+.contactUsFormRow{
+	display:flex;
+	flex-direction:row;
+}
+.contactUsFormBox{
+	flex:1;
+	margin:10px;
+	padding:10px;
+}
+.contactUsDetailsContainer{
+	flex:1;
+	border:1px solid;
+	margin:25px;
+	padding:10px;
+	display:flex;
+	flex-direction:Column;
+	background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+	
+}
+.contactUsReachContainer{
+	flex:1;
+
+	margin:10px;
+	padding:10px;
+	flex-direction:Column;
+}
+.contactUsDetailsRow{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+.contactUsDetailsText{
+	padding-left:10px
+}
+
+#map{
+	flex:1;
+
+	margin:10px;
+	padding:10px;
+
+}
+.contactUsDetailsSocials{
+	display:flex;
+	flex-direction:row;
+}
+.contactUsDetailsSocialsImage{
+	padding-right:20px;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+#meetTeam{
+	display:flex;
+	justify-content: center; 
+	
+}
+.teamMemeber{
+	border:1px solid;
+	width: 450px;
+	text-align:center;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	
+}
+.headshot{
+	border-radius: 10px;
+}
+#imageReplace{
+	text-align:center;
+}
+#messageReplaceOne{
+	text-align:center;
+}
+#messageReplaceTwo{
+	text-align:center;
+}
+	
+#message, #subject, #email, #phone, #firstName, #secondName{
+	width:99%;
+}
+#message{
+	resize:vertical;
+}
+input[type="text"], [type="email"], [type="submit"]{
+    font-size:24px;
+}
+textarea[type="text"]{
+	font-size:24px;
+}
+.contactList{
+	
+}
+@media(max-width:1400px){
+	.contactUsContentContainer{
+	flex-direction:Column;
+	}
+}
+.footerBox{
+	flex:1;
+	margin:10px;
+	padding:10px;
+	flex-direction:Column;
+	padding: 5px;
+	border-right: 1px solid white;
+	text-align:center;
+}
+.footerBoxEnd{
+	flex:1;
+	margin:10px;
+	padding:10px;
+	flex-direction:Column;
+	padding: 5px;
+	text-align:center;
+}
+.footerContactUsDetailsRow{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+	padding: 5px;
+}
+.footerContactUsDetailsText{
+	padding-left: 15px;
+}
+
+.footerContactUsDetailsSocials{
+	display:flex;
+	flex-direction:row;
+	padding: 5px;
+}
+.footerContactUsDetailsSocialsImage{
+	padding-right:20px;
+	text-align:center;
+}
+.footerContainer{
+	color: white;
+	display:flex;
+	background-color: #88966a;
+	width: 100%;
+	margin: auto;
+	font-size:14px;
+}
+
+.footercontentcontainer{
+	color: white;
+	display:flex;
+	flex-direction:row;
+	justify-content:space-evenly;
+	width: 100%;
+	max-width: 1320px;
+	margin: auto;
+	padding-top: 20px;
+}
+.footerOpeningHoursRow{
+	display:flex;
+	flex-direction:row;
+	align-items: center;
+}
+.footerEnd{
+	background-color: #B3D177;
+	width: 100%;
+	color: white;
+	Padding: 10px;
+}
+@media(max-width:1200px){
+	.footerContainer{
+	flex-direction:Column;
+	}
+	
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: white;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.staffBox{
+	border:1px solid;
+	width: 600px;
+	text-align:center;
+	background-color: rgb(255, 255, 255);
+	border-radius: 10px;
+	padding-top:40px;
+	padding-bottom:40px;
+	margin-left:50px;
+	margin-right:50px;
+
+}
+.footerAwardsRow{
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	padding: 5px;
+}
+@media(max-width:1400px){
+	.footercontentcontainer{
+	flex-direction:Column;
+	align-items :center;
+	flex:1;
+	text-align:center;
+	}
+	.footerBox{
+	width:90%;
+	margin:5px;
+	padding:10px;
+	flex-direction:Column;
+	padding: 5px;
+	border-right: none;
+	border-bottom: 1px solid white;
+	text-align:center;
+	}
+}
+	
