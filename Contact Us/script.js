@@ -36,8 +36,37 @@ function messageFunction(){
 		return false;
 	}	
 	document.getElementById("contactUsFormContainer").style.display="none";
-	document.getElementById("messageReplace").innerHTML=("Hi "+userFirstName+","+"<br/>"+"<br/>"+"thank you for your message regarding "+userSubject+"."+"<br/>"+"<br/>"+"You will be contacted via "
-	+userEmail+" and "+userPhone+" by a member of our team."+"<br/>"+"<br/>"+"We'll get back to you as quick as a kettle takes to boil!"+"<br/>"+"<br/>");
+	document.getElementById("messageReplaceOne").innerHTML=("Hi "+userFirstName+""+"<br/>"+"<br/>"+"Thank you for your message regarding "+userSubject+"."+"<br/>"+"<br/>"+"You will be contacted via "
+	+userEmail+" and "+userPhone+" by a member of our team."+"<br/>"+"<br/>");
 	document.getElementById("imageReplace").innerHTML=("<img src=Images/kettleboiling.gif>");
+	document.getElementById("messageReplaceTwo").innerHTML=("<br/>"+"We'll get back to you as quick as a kettle takes to boil!"+"<br/>"+"<br/>"+"Kind rgeards"+"<br/>"+"<br/>"+"Hearthside Teas");window.scrollTo(0, 190);	
 	
+}
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
 }
