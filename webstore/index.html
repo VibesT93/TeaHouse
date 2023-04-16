@@ -5,6 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
     <!--Google Font Import-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,273 +24,318 @@
 </head>
 
 <body>
-    <!--Nav Bar, PLACEHOLDER-->
-    <div class="topNav">
-        <div class="headerLinks">
-            <a href="www.google.ie">Home</a>
-            <a href="www.google.ie">Shop</a>
-            <a href="www.google.ie">Tea Picker</a>
-            <a href="www.google.ie">Contact</a>
-        </div>
-    </div>
-    <!--Header for shop section-->
-    <div class="shopHeader">
-        <h1>Shop</h1>
-        <div class="shopLinks">
-            <a href="#" onclick="hideNone()">All</a>
-            <a href="#" onclick="hideAccessories()">Tea</a>
-            <a href="#" onclick="hideTea()">Accessories</a>
-        </div>
-    </div>
-    <!--Webstore section-->
-    <div class="storeContainer">
-        <!--A grid layout using flex which will display our products-->
-        <div id="teaGrid" class="productGrid">
-            <!--Every product on the store will use this card to be displayed-->
-            <!--Lemongrass Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/lemongrasstea.jpg" alt="Dried lemongrass tea leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Lemongrass Tea</p>
-                    <p class="productPrice">€10/250g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Hibiscus Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/hibiscusblossomtea.jpg" alt="Dried hibiscus tea leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Hibiscus Tea</p>
-                    <p class="productPrice">€9/250g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Gunpowder Green Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/gunpowdergreentea.jpg" alt="Dried gunpowder green tea tea leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Green Tea</p>
-                    <p class="productPrice">€9/200g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Ceylon Black Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/blacktea.jpg" alt="Dried black tea  leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Ceylon Black Tea</p>
-                    <p class="productPrice">€8/200g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Irish Black Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/irishblacktea.jpg" alt="Dried black tea leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Irish Black Tea</p>
-                    <p class="productPrice">€10/200g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Apple Fruit Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/appletea.jpg" alt="Dried apple tea">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Apple Fruit Tea</p>
-                    <p class="productPrice">€11/200g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Nettle Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/nettletea.jpg" alt="Dried nettle tea leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Nettle Tea</p>
-                    <p class="productPrice">€12/250g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Peppermint Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/pepperminttea.jpg" alt="Dried peppermint tea leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Peppermint Tea</p>
-                    <p class="productPrice">€12/250g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Ginger Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/gingertea.jpg" alt="Dried ginger root tea">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Ginger Root Tea</p>
-                    <p class="productPrice">€10/250g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Earl Grey Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/earlgrey.jpg" alt="Earl Grey tea">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Earl Grey Tea</p>
-                    <p class="productPrice">€12/200g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Oolong Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/oolongtea.jpg" alt="Oolong tea leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Oolong Tea</p>
-                    <p class="productPrice">€12/200g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Wellness Tea-->
-            <div class="productCard">
-                <img class="productImg" src="./images/wellnestea.jpg" alt="Dried herbal tea leaves">
-                <p>Tea</p>
-                <div class="productInfo">
-                    <p class="productName">Wellness Tea</p>
-                    <p class="productPrice">€11/200g</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-        </div>
+    <!-- Banner -->
+    <div class="bannerContainer">
+        <div class="bannerContent">
+            <div class="col-lrg align-self-start">
+                <img id="banner-img" src="../images/banner.png" alt="A nice picture of tea">
 
-        <!--Begining of accessories section-->
-        <div id= "accessoriesGrid" class="productGrid">
-            <!--Ball Teal Strainer-->
-            <div class="productCard">
-                <img class="productImg" src="./images/ballstrainer.jpg"
-                    alt="Stainless steel ball used for straining tea">
-                <p>Accessories</p>
-                <div class="productInfo">
-                    <p class="productName">Steel Ball Strainer
-                    <p class="productPrice">€6.29</p>
+            </div>
+            <div class="col-sm">
+                <h3 id="banner-title">Hearthside Tea</h3>
+            </div>
+        </div>
+    </div>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-cup-hot-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M.5 6a.5.5 0 0 0-.488.608l1.652 7.434A2.5 2.5 0 0 0 4.104 16h5.792a2.5 2.5 0 0 0 2.44-1.958l.131-.59a3 3 0 0 0 1.3-5.854l.221-.99A.5.5 0 0 0 13.5 6H.5ZM13 12.5a2.01 2.01 0 0 1-.316-.025l.867-3.898A2.001 2.001 0 0 1 13 12.5Z" />
+                    <path
+                        d="m4.4.8-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 3.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 3.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 3 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 4.4.8Zm3 0-.003.004-.014.019a4.167 4.167 0 0 0-.204.31 2.327 2.327 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.31 3.31 0 0 1-.202.388 5.444 5.444 0 0 1-.253.382l-.018.025-.005.008-.002.002A.5.5 0 0 1 6.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 6.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 6 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 7.4.8Zm3 0-.003.004-.014.019a4.077 4.077 0 0 0-.204.31 2.337 2.337 0 0 0-.141.267c-.026.06-.034.092-.037.103v.004a.593.593 0 0 0 .091.248c.075.133.178.272.308.445l.01.012c.118.158.26.347.37.543.112.2.22.455.22.745 0 .188-.065.368-.119.494a3.198 3.198 0 0 1-.202.388 5.385 5.385 0 0 1-.252.382l-.019.025-.005.008-.002.002A.5.5 0 0 1 9.6 4.2l.003-.004.014-.019a4.149 4.149 0 0 0 .204-.31 2.06 2.06 0 0 0 .141-.267c.026-.06.034-.092.037-.103a.593.593 0 0 0-.09-.252A4.334 4.334 0 0 0 9.6 2.8l-.01-.012a5.099 5.099 0 0 1-.37-.543A1.53 1.53 0 0 1 9 1.5c0-.188.065-.368.119-.494.059-.138.134-.274.202-.388a5.446 5.446 0 0 1 .253-.382l.025-.035A.5.5 0 0 1 10.4.8Z" />
+                </svg> <!-- Sourced from https://icons.getbootstrap.com/icons/cup-hot-fill/-->
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Contact Us/Index.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="../webstore/index.html">Webstore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../History of Tea/index.html">History of Tea</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Quiz/index.html">Let us choose a Tea for you!!</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <div class="shopContent">
+        <!--Header for shop section-->
+        <div class="shopHeader">
+            <h1>Shop</h1>
+            <div class="shopLinks">
+                <a href="#" onclick="hideNone()">All</a>
+                <a href="#" onclick="hideAccessories()">Tea</a>
+                <a href="#" onclick="hideTea()">Accessories</a>
+            </div>
+        </div>
+        <!--Webstore section-->
+        <div class="storeContainer">
+            <!--A grid layout using flex which will display our products-->
+            <div id="teaGrid" class="productGrid">
+                <!--Every product on the store will use this card to be displayed-->
+                <!--Lemongrass Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/lemongrasstea.jpg" alt="Dried lemongrass tea leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Lemongrass Tea</p>
+                        <p class="productPrice">€10/250g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
+                <!--Hibiscus Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/hibiscusblossomtea.jpg" alt="Dried hibiscus tea leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Hibiscus Tea</p>
+                        <p class="productPrice">€9/250g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Gunpowder Green Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/gunpowdergreentea.jpg"
+                        alt="Dried gunpowder green tea tea leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Green Tea</p>
+                        <p class="productPrice">€9/200g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Ceylon Black Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/blacktea.jpg" alt="Dried black tea  leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Ceylon Black Tea</p>
+                        <p class="productPrice">€8/200g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Irish Black Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/irishblacktea.jpg" alt="Dried black tea leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Irish Black Tea</p>
+                        <p class="productPrice">€10/200g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Apple Fruit Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/appletea.jpg" alt="Dried apple tea">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Apple Fruit Tea</p>
+                        <p class="productPrice">€11/200g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Nettle Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/nettletea.jpg" alt="Dried nettle tea leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Nettle Tea</p>
+                        <p class="productPrice">€12/250g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Peppermint Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/pepperminttea.jpg" alt="Dried peppermint tea leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Peppermint Tea</p>
+                        <p class="productPrice">€12/250g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Ginger Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/gingertea.jpg" alt="Dried ginger root tea">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Ginger Root Tea</p>
+                        <p class="productPrice">€10/250g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Earl Grey Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/earlgrey.jpg" alt="Earl Grey tea">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Earl Grey Tea</p>
+                        <p class="productPrice">€12/200g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Oolong Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/oolongtea.jpg" alt="Oolong tea leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Oolong Tea</p>
+                        <p class="productPrice">€12/200g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
+                </div>
+                <!--Wellness Tea-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/wellnestea.jpg" alt="Dried herbal tea leaves">
+                    <p>Tea</p>
+                    <div class="productInfo">
+                        <p class="productName">Wellness Tea</p>
+                        <p class="productPrice">€11/200g</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
             </div>
-            <!--Induction Adapter-->
-            <div class="productCard">
-                <img class="productImg" src="./images/inductionadapter.jpg"
-                    alt="Adapter for using coffee perculator on indiction hob">
-                <p>Accessories</p>
-                <div class="productInfo">
-                    <p class="productName">Induction Adapter</p>
-                    <p class="productPrice">€21.99</p>
+
+            <!--Begining of accessories section-->
+            <div id="accessoriesGrid" class="productGrid">
+                <!--Ball Teal Strainer-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/ballstrainer.jpg"
+                        alt="Stainless steel ball used for straining tea">
+                    <p>Accessories</p>
+                    <div class="productInfo">
+                        <p class="productName">Steel Ball Strainer
+                        <p class="productPrice">€6.29</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
+                <!--Induction Adapter-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/inductionadapter.jpg"
+                        alt="Adapter for using coffee perculator on indiction hob">
+                    <p>Accessories</p>
+                    <div class="productInfo">
+                        <p class="productName">Induction Adapter</p>
+                        <p class="productPrice">€21.99</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
-            </div>
-            <!--Espresso Maker-->
-            <div class="productCard">
-                <img class="productImg" src="./images/coffeemaker.jpg" alt="Stovetop espresso maker">
-                <p>Accessories</p>
-                <div class="productInfo">
-                    <p class="productName">Espresso Maker</p>
-                    <p class="productPrice">€24.99</p>
+                <!--Espresso Maker-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/coffeemaker.jpg" alt="Stovetop espresso maker">
+                    <p>Accessories</p>
+                    <div class="productInfo">
+                        <p class="productName">Espresso Maker</p>
+                        <p class="productPrice">€24.99</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
+                <!--Basket Strainer-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/basketstrainer.jpg" alt="Strainer in the shape of a basket">
+                    <p>Accessories</p>
+                    <div class="productInfo">
+                        <p class="productName">Basket Strainer</p>
+                        <p class="productPrice">€8.79</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
-            </div>
-            <!--Basket Strainer-->
-            <div class="productCard">
-                <img class="productImg" src="./images/basketstrainer.jpg" alt="Strainer in the shape of a basket">
-                <p>Accessories</p>
-                <div class="productInfo">
-                    <p class="productName">Basket Strainer</p>
-                    <p class="productPrice">€8.79</p>
+                <!--Red Espresso Maker-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/redcoffeemaker.jpg" alt="Red espresso maker">
+                    <p>Accessories</p>
+                    <div class="productInfo">
+                        <p class="productName">Red Espresso Maker</p>
+                        <p class="productPrice">€44.79</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
+                <!--Tea Jars-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/teajars.jpg" alt="Bamboo and glass tea Jars">
+                    <p>Accessories</p>
+                    <div class="productInfo">
+                        <p class="productName">Glass Tea Jars</p>
+                        <p class="productPrice">€24.99</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
-            </div>
-            <!--Red Espresso Maker-->
-            <div class="productCard">
-                <img class="productImg" src="./images/redcoffeemaker.jpg" alt="Red espresso maker">
-                <p>Accessories</p>
-                <div class="productInfo">
-                    <p class="productName">Red Espresso Maker</p>
-                    <p class="productPrice">€44.79</p>
+                <!--MIlk Frother-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/milkfrother.jpg" alt="Milk frother">
+                    <p>Accessories</p>
+                    <div class="productInfo">
+                        <p class="productName">Milk Frother</p>
+                        <p class="productPrice">€34.99</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Tea Jars-->
-            <div class="productCard">
-                <img class="productImg" src="./images/teajars.jpg" alt="Bamboo and glass tea Jars">
-                <p>Accessories</p>
-                <div class="productInfo">
-                    <p class="productName">Glass Tea Jars</p>
-                    <p class="productPrice">€24.99</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--MIlk Frother-->
-            <div class="productCard">
-                <img class="productImg" src="./images/milkfrother.jpg" alt="Milk frother">
-                <p>Accessories</p>
-                <div class="productInfo">
-                    <p class="productName">Milk Frother</p>
-                    <p class="productPrice">€34.99</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
-                </div>
-            </div>
-            <!--Tea Infuser-->
-            <div class="productCard">
-                <img class="productImg" src="./images/infuser.jpg" alt="Tea infuser">
-                <p>Accessories</p>
-                <div class="productInfo">
-                    <p class="productName">Tea Infuser</p>
-                    <p class="productPrice">€19.49</p>
-                </div>
-                <div class="purchaseDiv">
-                    <a href="">Add to Cart</a>
+                <!--Tea Infuser-->
+                <div class="productCard">
+                    <img class="productImg" src="./images/infuser.jpg" alt="Tea infuser">
+                    <p>Accessories</p>
+                    <div class="productInfo">
+                        <p class="productName">Tea Infuser</p>
+                        <p class="productPrice">€19.49</p>
+                    </div>
+                    <div class="purchaseDiv">
+                        <a href="">Add to Cart</a>
+                    </div>
                 </div>
             </div>
         </div>
