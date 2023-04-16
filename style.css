@@ -28,6 +28,8 @@ h5 {
 
 
 .flex-container {
+    max-width: 1320px;
+    margin: auto;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -36,17 +38,14 @@ h5 {
 #homepageleftside{
     max-width: 1320px;
     margin: auto;
-    
     font-family: "Roboto";
     color: #F8FFF8;
-    
 }
 
 #homepagerightside{
     max-width: 1320px;
     margin: auto;
     justify-content: center;
-    
 }
 
 
