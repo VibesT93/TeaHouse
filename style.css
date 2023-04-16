@@ -32,15 +32,17 @@ h5 {
 }
 
 #homepageleftside{
+    max-width: 1320px;
+    margin: auto;
     
-    margin: 2rem;
     font-family: "Roboto";
     color: #F8FFF8;
     
 }
 
 #homepagerightside{
-    margin: 2rem;
+    max-width: 1320px;
+    margin: auto;
     justify-content: center;
     
 }
@@ -107,6 +109,8 @@ h5 {
 
 
 #hero-background{
+    max-width: 1320px;
+    margin: auto;
     background-image: url("images/hero-image.png");
     background-position: 50% 50%;
     background-size: cover;
@@ -117,6 +121,8 @@ h5 {
 }
 
 #hero-text{
+    max-width: 1320px;
+    margin: auto;
     font-family: "Roboto";
     color: #F8FFF8;
     font-size: 6rem;
@@ -149,6 +155,8 @@ h5 {
  }
 
 #quiz-title {
+    max-width: 1320px;
+    margin: auto;
     text-align: center;
     width: 100%;
     background-color: #B3D177;
@@ -157,6 +165,8 @@ h5 {
 }
 
 #quiz-form {
+    max-width: 1320px;
+    margin: auto;
     align-items: center;
     text-align: center;
     width: 100%;
@@ -166,6 +176,8 @@ h5 {
 }
 
 #questions {
+    max-width: 1320px;
+    margin: auto;
     display: flex;
     justify-content: center;
     flex-flow:row wrap;
