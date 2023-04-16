@@ -188,8 +188,16 @@ h5 {
 
 #quiz-form {
     align-items: center;
+    text-align: center;
     width: 100%;
-    background-color:#8fa385;
+    background-color:#828858;
     color: #F8FFF8;
     padding: 3rem;
+}
+
+#questions {
+    display: flex;
+    justify-content: center;
+    flex-flow:row wrap;
+   
 }
