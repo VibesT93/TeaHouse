@@ -27,7 +27,7 @@ function teaQuiz(){
     document.getElementById("quiz-title").style.display= "none";
 
     if (z.checked == true){
-        document.getElementsByClassName"newText").innerHTML = "We would suggest a highly oxidised tea. Such as an Irish Black Tea or Ceylon Black";
+        document.getElementsByClassName("newText").innerHTML = "We would suggest a highly oxidised tea. Such as an Irish Black Tea or Ceylon Black";
     }
     else if (x.checked == true && y.checked == true){
         document.getElementsByClassName("newText").innerHTML = "We would suggest a tea made with flowers and herbs. Such as an Hibiscus Tea or Apple Fruit Tea";
