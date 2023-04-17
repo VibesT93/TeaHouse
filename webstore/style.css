@@ -6,12 +6,12 @@
     }
 
     .bannerContainer {
-        
+
         background-color: #828858;
         max-height: 10rem;
     }
 
-    .bannerContent{
+    .bannerContent {
         max-width: 1320px;
         margin: auto;
         display: flex;
@@ -69,6 +69,7 @@
     .storeContainer {
         max-width: 1320px;
         margin: auto;
+        padding-bottom: 80px;
     }
 
     /*Grid used to display procuts flexibly*/
@@ -131,4 +132,129 @@
     .purchaseDiv:hover {
         background-color: #6b704c;
 
+    }
+
+    /*Footer*/
+    .footerBox {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        flex-direction: Column;
+        border-right: 1px solid white;
+        text-align: center;
+    }
+
+    .footerBoxEnd {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        flex-direction: Column;
+        text-align: center;
+    }
+
+    .footerContactUsDetailsRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px;
+    }
+
+    .footerContactUsDetailsText {
+        padding-left: 15px;
+    }
+
+    .footerContactUsDetailsSocials {
+        display: flex;
+        flex-direction: row;
+        padding: 5px;
+    }
+
+    .footerContactUsDetailsSocialsImage {
+        padding-right: 20px;
+        text-align: center;
+    }
+
+    .footerContainer {
+        color: white;
+        display: flex;
+        background-color: #88966a;
+        width: 100%;
+        margin: auto;
+    }
+
+    .footerContainer h1 {
+        font-family: 'Gloock', serif;
+        font-size: 1.25rem;
+    }
+
+    .footerContainer h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25rem;
+    }
+
+    .footerEnd h2 {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1.25rem;
+    }
+
+    .footercontentcontainer {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        max-width: 1320px;
+        margin: auto;
+    }
+
+    .footerOpeningHoursRow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .footerEnd {
+        background-color: #B3D177;
+        width: 100%;
+        color: white;
+        Padding: 10px;
+    }
+
+    @media(max-width:1000px) {
+        .footercontentcontainer {
+            flex-direction: Column;
+            align-items: center;
+            flex: 1;
+            text-align: center;
+        }
+
+        .footerBox {
+            width: 90%;
+            margin: 5px;
+            padding: 10px;
+            flex-direction: Column;
+            padding: 5px;
+            border-right: none;
+            border-bottom: 1px solid white;
+            text-align: center;
+        }
+
+        .footerContactUsDetailsRow {
+            flex-direction: column;
+        }
+
+        .footerContactUsDetailsSocials {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .footerContactUsDetailsText {
+            padding-left: 0px;
+            padding-top: 5px;
+        }
+
+        .footerContactUsDetailsSocialsImage {
+            padding: 10px;
+            text-align: center;
+        }
     }
