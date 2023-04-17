@@ -20,16 +20,25 @@ function hideNone(){
 //tea Quiz
 
 function teaQuiz(){
-    var x = document.getElementById("sweetness").value;
-    var y = document.getElementById("floral").value;
-    var z = document.getElementById("milk").value;
+    var x = document.getElementById("sweetness");
+    var y = document.getElementById("floral");
+    var z = document.getElementById("milk");
     document.getElementById("quiz-form").style.display= "none";
     document.getElementById("quiz-title").style.display= "none";
 
-    if (z == "Yes"){
-
+    if (z.checked == true){
+        document.getElementById("newText").innerHTML = "We would suggest a highly oxidised tea. Such as an Irish Black Tea or Ceylon Black";
+    }
+    else if (x.checked == true && y.checked == true){
+        document.getElementById("newText").innerHTML = "We would suggest a tea made with flowers and herbs. Such as an Hibiscus Tea or Apple Fruit Tea";
+    }
+    else if (x.checked == false && y.checked == true){
+        document.getElementById("newText").innerHTML = "We would suggest a tea made with a strong herbal taste. Such as an Nettle Tea or Wellness Tea";
+    }
+    else {
+        document.getElementById("newText").innerHTML = "We would suggest a natural processed tea. Such as our Oolong tea";
     }
     
-
-
+    
+    
 }
