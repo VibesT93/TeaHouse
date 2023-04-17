@@ -39,6 +39,4 @@ function teaQuiz(){
         document.getElementById("newText").innerHTML = "We would suggest a natural processed tea. Such as our Oolong tea";
     }
     
-    
-    
 }
