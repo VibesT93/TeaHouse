@@ -223,3 +223,10 @@ h5 {
     max-width: 1320px;
     margin: auto;
 }
+
+#newText {
+    max-width: 1320px;
+    margin: auto;
+    background-color: #B3D177;
+    color: #F8FFF8;
+}
