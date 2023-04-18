@@ -52,12 +52,22 @@ h5 {
 
 
 
+/*footer*/
+
 .footerBox{
 	flex:1;
 	margin:10px;
 	padding:10px;
 	flex-direction:Column;
-	padding: 5px
+	border-right: 1px solid white;
+	text-align:center;
+}
+.footerBoxEnd{
+	flex:1;
+	margin:10px;
+	padding:10px;
+	flex-direction:Column;
+	text-align:center;
 }
 .footerContactUsDetailsRow{
 	display:flex;
@@ -66,7 +76,7 @@ h5 {
 	padding: 5px;
 }
 .footerContactUsDetailsText{
-	padding: 5px;
+	padding-left: 15px;
 }
 
 .footerContactUsDetailsSocials{
@@ -76,14 +86,36 @@ h5 {
 }
 .footerContactUsDetailsSocialsImage{
 	padding-right:20px;
+	text-align:center;
 }
 .footerContainer{
+	color: #F8FFF8;
+	display:flex;
+	background-color: #828858;
+	width: 100%;
+	margin: auto;
+}
+.footerContainer h1{
+	font-family: 'Gloock', serif;
+	font-size:1.25rem;
+}
+.footerContainer h2{
+	font-family: 'Roboto', sans-serif;
+	font-size:1.25rem;
+}
+.footerEnd h2{
+	font-family: 'Roboto', sans-serif;
+	font-size:1.25rem;
+}
+	
+.footercontentcontainer{
+	color: #F8FFF8;
 	display:flex;
 	flex-direction:row;
 	justify-content:space-evenly;
-	background-color: #B3D177;
 	width: 100%;
-	color: white; 
+	max-width: 1320px;
+	margin: auto;
 }
 .footerOpeningHoursRow{
 	display:flex;
@@ -91,23 +123,52 @@ h5 {
 	align-items: center;
 }
 .footerEnd{
-	border-top: 1px solid white;
 	background-color: #B3D177;
 	width: 100%;
-	color: white; 
+	color: white;
+	Padding: 10px;
 }
-@media(max-width:1100px){
-	.footerContainer{
+.footerNavLink a{
+	text-decoration:none;
+	color: #F8FFF8;
+	
+}
+.footerNavLink a:hover {
+	text-decoration: underline;
+}
+@media(max-width:1000px){
+	.footercontentcontainer{
 	flex-direction:Column;
+	align-items :center;
+	flex:1;
+	text-align:center;
+	}
+	.footerBox{
+	width:90%;
+	margin:5px;
+	padding:10px;
+	flex-direction:Column;
+	padding: 5px;
+	border-right: none;
+	border-bottom: 1px solid white;
+	text-align:center;
+	}
+	.footerContactUsDetailsRow{
+		flex-direction: column;
+	}
+	.footerContactUsDetailsSocials{
+		justify-content:center;
+		align-items:center;
+	}
+	.footerContactUsDetailsText{
+	padding-left: 0px;
+	padding-top: 5px;
+	}
+	.footerContactUsDetailsSocialsImage{
+	padding:10px;
+	text-align:center;
 	}
 }
-
-
-#location-footer{
-    text-align: start;
-}
-
-
 
 #hero-background{
     max-width: 1320px;
