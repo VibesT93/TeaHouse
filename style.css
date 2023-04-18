@@ -171,8 +171,6 @@ h5 {
 }
 
 #hero-background{
-    max-width: 1320px;
-    margin: auto;
     background-image: url("images/hero-image.png");
     background-position: 50% 50%;
     background-size: cover;
