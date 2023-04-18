@@ -1,16 +1,21 @@
+/*functions after clicking submit*/
 function messageFunction(){
+	/*prevents page refresh*/
 	event.preventDefault();
+	/*collects data inserted into input boxes*/
 	var userFirstName=document.getElementById("firstName").value;
 	var userSecondName=document.getElementById("secondName").value;
 	var userEmail=document.getElementById("email").value;
 	var userPhone=document.getElementById("phone").value;
 	var userSubject=document.getElementById("subject").value;
-	var fN = document.forms["cFormContainer"]["firstName"].value;
-	var sN = document.forms["cFormContainer"]["secondName"].value;
-	var e = document.forms["cFormContainer"]["email"].value;
-	var p = document.forms["cFormContainer"]["phone"].value;
-	var s = document.forms["cFormContainer"]["subject"].value;
-	var m = document.forms["cFormContainer"]["message"].value;
+	/*variable used to check if form is completed*/
+	var fN = document.forms["contactUsFormContainer"]["firstName"].value;
+	var sN = document.forms["contactUsFormContainer"]["secondName"].value;
+	var e = document.forms["contactUsFormContainer"]["email"].value;
+	var p = document.forms["contactUsFormContainer"]["phone"].value;
+	var s = document.forms["contactUsFormContainer"]["subject"].value;
+	var m = document.forms["contactUsFormContainer"]["message"].value;
+	/*if statement to determine if form is complted, will return an error message if so*/
 	if (fN == "" || fN == null) {
 		alert("First name must be filled out");
 		return false;
@@ -34,16 +39,15 @@ function messageFunction(){
 	else if (m == "" || m == null) {
 		alert("Message must be filled out");
 		return false;
-	}	
-	document.getElementById("cFormContainer").style.display="none";
-	document.getElementById("messageReplaceOne").innerHTML=("<br/>"+"<br/>"+"Hi "+userFirstName+""+"<br/>"+"<br/>"+"Thank you for your message regarding "+userSubject+"."+"<br/>"+"<br/>"+"You will be contacted via "
+	}
+	
+	document.getElementById("contactUsFormContainer").style.display="none";
+	document.getElementById("messageReplaceOne").innerHTML=("Hi "+userFirstName+""+"<br/>"+"<br/>"+"Thank you for your message regarding "+userSubject+"."+"<br/>"+"<br/>"+"You will be contacted via "
 	+userEmail+" and "+userPhone+" by a member of our team."+"<br/>"+"<br/>");
 	document.getElementById("imageReplace").innerHTML=("<img src=Images/kettleboiling.gif>");
-	document.getElementById("messageReplaceTwo").innerHTML=("<br/>"+"We'll get back to you as quick as a kettle takes to boil!"+"<br/>"+"<br/>"+"Kind rgeards"+"<br/>"+"<br/>"+"Hearthside Teas");
-	const element = document.getElementById("messageReplaceOne");
-	element.scrollIntoView();		
+	document.getElementById("messageReplaceTwo").innerHTML=("<br/>"+"We'll get back to you as quick as a kettle takes to boil!"+"<br/>"+"<br/>"+"Kind rgeards"+"<br/>"+"<br/>"+"Hearthside Teas");window.scrollTo(0, 190);	
+	
 }
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
