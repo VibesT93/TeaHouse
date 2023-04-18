@@ -44,7 +44,7 @@ function messageFunction(){
 	document.getElementById("cFormContainer").style.display="none";
 	document.getElementById("messageReplaceOne").innerHTML=("<br/>"+"<br/>"+"Hi "+userFirstName+""+"<br/>"+"<br/>"+"Thank you for your message regarding "+userSubject+"."+"<br/>"+"<br/>"+"You will be contacted via "
 	+userEmail+" and "+userPhone+" by a member of our team."+"<br/>"+"<br/>");
-	document.getElementById("imageReplace").innerHTML=("<img src=Images/kettleboiling.gif>");
+	document.getElementById("imageReplace").innerHTML=("<img src=images/kettleboiling.gif>");
 	document.getElementById("messageReplaceTwo").innerHTML=("<br/>"+"We'll get back to you as quick as a kettle takes to boil!"+"<br/>"+"<br/>"+"Kind rgeards"+"<br/>"+"<br/>"+"Hearthside Teas");
 	/*Scrolls to top of mesage that is displayed upon form completion*/
 	const element = document.getElementById("messageReplaceOne");
