@@ -143,6 +143,14 @@
         border-right: 1px solid white;
         text-align: center;
     }
+    .footerNavLink a{
+        text-decoration:none;
+        color: #F8FFF8;
+        
+    }
+    .footerNavLink a:hover {
+        text-decoration: underline;
+    }
 
     .footerBoxEnd {
         flex: 1;
@@ -177,7 +185,7 @@
     .footerContainer {
         color: white;
         display: flex;
-        background-color: #88966a;
+        background-color: #828858;
         width: 100%;
         margin: auto;
     }
