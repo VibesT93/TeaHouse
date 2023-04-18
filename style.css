@@ -28,8 +28,7 @@ h5 {
 
 
 .flex-container {
-    max-width: 1320px;
-    margin: auto;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
